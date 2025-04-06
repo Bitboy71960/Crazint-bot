@@ -1,0 +1,22 @@
+{
+  "name": "discord-maigret-bot",
+  "version": "1.0.0",
+  "description": "Bot Discord utilisant Maigret pour la recherche de profils",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "setup": "node setup.js",
+    "build": "chmod +x build.sh && ./build.sh && node setup.js"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {
+    "discord.js": "^14.0.0",
+    "dotenv": "^16.3.1",
+    "child_process": "^1.0.2",
+    "util": "^0.12.4",
+    "http": "0.0.1-security",
+    "fs-extra": "^11.1.1"
+  }
+} 

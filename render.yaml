@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: discord-maigret-bot
+    env: node
+    buildCommand: ./build.sh
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 16.x
+      - key: PYTHON_VERSION
+        value: 3.10.0
+      - key: PORT
+        value: 10000
+      - key: DISCORD_TOKEN
+        sync: false
+      - key: ADMIN_ROLE_ID
+        sync: false
+      - key: BOT_CHANNEL_ID
+        sync: false
+      - key: GOOGLE_API_KEY
+        sync: false
+      - key: GOOGLE_CSE_ID
+        sync: false
+      - key: INTELX_API_KEY
+        sync: false
+    plan: starter 
